@@ -8,11 +8,12 @@ import zipfile
 import plotly.graph_objects as go
 
 
-command = "kaggle datasets download -d thedevastator/higher-education-predictors-of-student-retention"
-result = subprocess.run(command, shell=True, capture_output=True, text=True)
-with zipfile.ZipFile('higher-education-predictors-of-student-retention.zip', 'r') as zip_ref:
-    zip_ref.extractall()
+# command = "kaggle datasets download -d thedevastator/higher-education-predictors-of-student-retention"
+# result = subprocess.run(command, shell=True, capture_output=True, text=True)
+# with zipfile.ZipFile('higher-education-predictors-of-student-retention.zip', 'r') as zip_ref:
+#     zip_ref.extractall()
 
+df = pd.read_csv("dataset.csv")
 # Titel van de applicatie
 st.title("Slagingsstatus van studenten aan de hand van verschillende variabelen")
 
