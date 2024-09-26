@@ -1,7 +1,1 @@
-streamlit==1.38.0
-pandas @ file:///C:/ci/pandas_1650373458095/work
-numpy @ file:///C:/ci/numpy_and_numpy_base_1649782970434/work
-matplotlib @ file:///C:/ci/matplotlib-suite_1647423638658/work
-plotly @ file:///opt/conda/conda-bld/plotly_1646671701182/work
-zipp @ file:///opt/conda/conda-bld/zipp_1641824620731/work
 
