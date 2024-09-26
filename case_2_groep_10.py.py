@@ -6,6 +6,14 @@ import plotly.express as px
 import subprocess
 import zipfile
 import plotly.graph_objects as go
+import os
+
+# Set the working directory
+working_directory = r'C:\Users\Leigi\OneDrive\Bureaublad\Hva\toegepaste wiskunde\Jaar 3\minor\case 2'
+os.chdir(working_directory)
+
+# Verify the current working directory
+print("Current Working Directory:", os.getcwd())
 
 command = "kaggle datasets download -d thedevastator/higher-education-predictors-of-student-retention"
 result = subprocess.run(command, shell=True, capture_output=True, text=True)
